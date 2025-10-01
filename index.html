@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Luca Med provides reliable medicine delivery solutions for pharmacies: same-day, on-demand, secure, and cold-chain compliant."/>
+  <title>Luca Med — Medicine Delivery Solutions</title>
+  <link rel="preload" href="images/hero-medicine-delivery.jpg" as="image">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="images/logo-lucamed.svg" type="image/svg+xml">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Luca Med Home">
+        <img src="images/logo-lucamed1.png" alt="Luca Med Logo" width="140" height="36"/>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#signup" class="btn btn--sm">Pharmacy Signup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Medicine Delivery Hero">
+    <div class="hero__bg" role="img" aria-label="Courier delivering medicines" style="background-image:url('images/bg.jpg');"></div>
+    <div class="container hero__content">
+      <h1>Reliable Medicine Delivery for Pharmacies</h1>
+      <p>Deliver prescriptions safely, on-time, and at scale with Luca Med’s on-demand network and cold-chain capabilities.</p>
+      <div class="hero__actions">
+        <a href="#signup" class="btn btn--primary">Get Started</a>
+        <a href="#how" class="btn btn--ghost">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="section section--about">
+    <div class="container grid grid--2">
+      <div>
+        <h2>About Luca Med</h2>
+        <p>Luca Med helps pharmacies deliver medical orders safely and on-time. We combine a vetted driver network, flexible pickup windows, and cold-chain management to protect product integrity and patient outcomes.</p>
+        <p>From one-off deliveries to recurring schedules, we streamline logistics so your team can focus on care, not couriers.</p>
+      </div>
+      <div class="card stats">
+        <div class="stats__item">
+          <strong>24/7</strong>
+          <span>On-Demand Pickup</span>
+        </div>
+        <div class="stats__item">
+          <strong>99.5%</strong>
+          <span>On-Time Rate</span>
+        </div>
+        <div class="stats__item">
+          <strong>Cold-Chain</strong>
+          <span>Validated Workflow</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="section section--muted">
+    <div class="container">
+      <h2>How It Works</h2>
+      <ol class="steps">
+        <li class="step">
+          <div class="step__num">1</div>
+          <div class="step__body">
+            <h3>Pharmacies Create Orders</h3>
+            <p>Enter order details, recipient info, and any temperature or handling requirements through the dashboard or API.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step__num">2</div>
+          <div class="step__body">
+            <h3>On-Demand Pickup Is Scheduled</h3>
+            <p>Choose pickup windows that fit your workflow—immediate, same-day, or scheduled recurring pickups.</p>
+          </div>
+        </li>
+        <li class="step">
+          <div class="step__num">3</div>
+          <div class="step__body">
+            <h3>Delivery Is Executed</h3>
+            <p>Vetted drivers complete delivery with live tracking, chain-of-custody capture, and proof of delivery.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="grid grid--3 feature-grid">
+        <article class="feature">
+          <img src="images/icon-network.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Extensive Driver Network</h3>
+          <p>Access a broad coverage area with background-checked, healthcare-trained drivers.</p>
+        </article>
+        <article class="feature">
+          <img src="images/icon-time.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Flexible Pick-up Times</h3>
+          <p>Immediate, same-day, or scheduled pickups tailored to pharmacy operations.</p>
+        </article>
+        <article class="feature">
+          <img src="images/icon-recurring.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Recurring Order Management</h3>
+          <p>Create templates and automate frequent routes for clinics, LTC, and home deliveries.</p>
+        </article>
+        <article class="feature">
+          <img src="images/icon-payment.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Secure Payment Processing</h3>
+          <p>PCI-aware flows with role-based access to billing and invoicing.</p>
+        </article>
+        <article class="feature">
+          <img src="images/icon-same-day.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Same-Day On-Demand Delivery</h3>
+          <p>Rapid delivery windows with live ETAs and notifications.</p>
+        </article>
+        <article class="feature">
+          <img src="images/icon-cold-chain.svg" alt="" aria-hidden="true" class="feature__icon"/>
+          <h3>Cold-Chain Delivery Management</h3>
+          <p>Temperature controls, monitoring, and documented chain-of-custody.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section id="plans" class="section section--muted">
+    <div class="container">
+      <h2>Plans</h2>
+      <div class="plans">
+        <div class="plan card">
+          <h3>Starter</h3>
+          <p class="plan__desc">For independent pharmacies starting with delivery.</p>
+          <div class="plan__price">
+            <span class="price">$49</span><span class="period">/month</span>
+          </div>
+          <ul class="plan__features">
+            <li>Up to 100 deliveries/month</li>
+            <li>Same-day on-demand</li>
+            <li>Basic notifications</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#signup" class="btn btn--primary btn--full">Choose Starter</a>
+        </div>
+
+        <div class="plan card plan--featured" aria-label="Recommended Plan">
+          <div class="badge">Most Popular</div>
+          <h3>Growth</h3>
+          <p class="plan__desc">For multi-location pharmacies scaling delivery ops.</p>
+          <div class="plan__price">
+            <span class="price">$199</span><span class="period">/month</span>
+          </div>
+          <ul class="plan__features">
+            <li>Up to 1,500 deliveries/month</li>
+            <li>Recurring order workflows</li>
+            <li>Live tracking & POD</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#signup" class="btn btn--primary btn--full">Choose Growth</a>
+        </div>
+
+        <div class="plan card">
+          <h3>Enterprise</h3>
+          <p class="plan__desc">For regional chains and hospital systems.</p>
+          <div class="plan__price">
+            <span class="price">Custom</span>
+          </div>
+          <ul class="plan__features">
+            <li>Unlimited deliveries</li>
+            <li>Cold-chain programs</li>
+            <li>Advanced SLA & compliance</li>
+            <li>Dedicated success manager</li>
+          </ul>
+          <a href="#signup" class="btn btn--primary btn--full">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pharmacy Signup Form -->
+  <section id="signup" class="section">
+    <div class="container">
+      <h2>Pharmacy Signup</h2>
+      <p>Tell us about your pharmacy and we’ll get you onboarded quickly.</p>
+
+      <form id="signupForm" class="form card" novalidate>
+        <div class="grid grid--2">
+          <div class="form__group">
+            <label for="pharmacyName">Pharmacy Name</label>
+            <input type="text" id="pharmacyName" name="pharmacyName" placeholder="e.g., Main Street Pharmacy" required />
+            <small class="error">Please enter your pharmacy name.</small>
+          </div>
+          <div class="form__group">
+            <label for="contactName">Contact Person</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Full name" required />
+            <small class="error">Please enter the contact person’s name.</small>
+          </div>
+          <div class="form__group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="name@pharmacy.com" required />
+            <small class="error">Please enter a valid email.</small>
+          </div>
+          <div class="form__group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required pattern="^[0-9+()\\-\\s]{7,}$"/>
+            <small class="error">Please enter a valid phone number.</small>
+          </div>
+          <div class="form__group">
+            <label for="locations">Number of Locations</label>
+            <select id="locations" name="locations" required>
+              <option value="" selected disabled>Select</option>
+              <option>1</option>
+              <option>2-5</option>
+              <option>6-10</option>
+              <option>11-25</option>
+              <option>26+</option>
+            </select>
+            <small class="error">Please select an option.</small>
+          </div>
+          <div class="form__group">
+            <label for="monthlyVolume">Estimated Monthly Deliveries</label>
+            <select id="monthlyVolume" name="monthlyVolume" required>
+              <option value="" selected disabled>Select</option>
+              <option>0-100</option>
+              <option>101-500</option>
+              <option>501-1500</option>
+              <option>1501-5000</option>
+              <option>5000+</option>
+            </select>
+            <small class="error">Please select an option.</small>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="requirements">Special Requirements (optional)</label>
+          <textarea id="requirements" name="requirements" rows="4" placeholder="Cold-chain needs, pickup windows, service areas, etc."></textarea>
+        </div>
+
+        <div class="form__footer">
+          <label class="checkbox">
+            <input type="checkbox" id="terms" required />
+            <span>I agree to the Terms and Privacy Policy.</span>
+          </label>
+          <button type="submit" class="btn btn--primary">Request Demo</button>
+        </div>
+
+        <div id="formAlert" class="alert" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="images/logo-lucamed.svg" alt="Luca Med Logo" width="140" height="36"/>
+        <p>Medicine delivery solutions for modern pharmacies.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#signup">Signup</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer__links">
+          <li><a href="mailto:hello@lucamed.com">hello@lucamed.com</a></li>
+          <li><a href="tel:+15550000000">+1 (555) 000-0000</a></li>
+          <li>Mon–Fri, 9am–6pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul class="footer__links">
+          <li><a href="#" aria-label="Terms of Service">Terms</a></li>
+          <li><a href="#" aria-label="Privacy Policy">Privacy</a></li>
+          <li><a href="#" aria-label="Compliance and Security">Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <small>© <span id="year"></span> Luca Med. All rights reserved.</small>
+        <div class="social">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Twitter">Twitter/X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+```__
