@@ -2203,3 +2203,19 @@ responsive
   text-align: center;
 }
 
+
+    @media (max-width: 768px) {
+      .service-item {
+        width: 100%; /* Make each service item take full width */
+        margin-bottom: 20px; /* Add some space between items */
+      }
+    }
+
+    /* Media query for iPad and larger tablets */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .service-item {
+        width: 48%; /* Two items per row */
+        margin-bottom: 20px; /* Add some space between items */
+      }
+    }
+
