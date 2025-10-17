@@ -1,0 +1,121 @@
+/* Minimal 3D flip styles for the service cards */
+.naccs .menu .thumb {
+  perspective: 1000px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  /* ensure consistent sizing (adjust as needed) */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 8px;
+}
+.naccs .menu > div { /* each menu column */
+  padding: 8px;
+}
+
+/* inner card that flips */
+.naccs .menu .thumb .card-inner {
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  min-height: 120px; /* increased so front/back have room */
+  /* ensure front/back occupy same box */
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+}
+
+/* front/back faces */
+.naccs .menu .thumb .card-front,
+.naccs .menu .thumb .card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  width: 100%;
+  min-height: 120px;
+}
+
+/* style the title on front - keep same look as original */
+.naccs .menu .thumb .card-front h4 {
+  margin: 8px 0 0;
+  font-size: 1.125rem; /* match original heading sizing */
+  font-weight: 700;    /* stronger weight like original */
+  color: #333;         /* visible dark color */
+  line-height: 1.1;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* layout: image centered and text under it */
+.naccs .menu .thumb .card-front {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* ensure icon and title layout matches original .thumb */
+.naccs .menu .thumb .card-front .icon {
+  display: block;
+  margin: 0 auto;
+}
+.naccs .menu .thumb .card-front .icon img {
+  width: 48px;   /* match original image sizing */
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* back face: rotated and positioned exactly over front */
+.naccs .menu .thumb .card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  /* remove boxed background so only text shows */
+  background: transparent;
+  color: #222;
+  /* remove visual box */
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* flipped state rotates inner container */
+.naccs .menu .thumb.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ensure the front looks good when back is visible */
+.naccs .menu .thumb .card-front {
+  z-index: 2;
+}
+
+/* small text styling for back paragraph */
+.naccs .menu .thumb .card-back p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* responsive tweaks */
+@media (min-width: 768px) {
+  .naccs .menu .thumb { width: auto; }
+  .naccs .menu > div { display: inline-block; vertical-align: top; width: 18%; }
+}

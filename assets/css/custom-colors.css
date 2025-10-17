@@ -1,0 +1,32 @@
+/* Override text color to #181c32 for body text (exclude headings).
+   This is a safe, last-loaded override - it won't change header colors.
+*/
+:root { --body-text-color: black; }
+
+/* Apply to common text elements but do not include h1..h6 so headers keep their theme color */
+body,
+body p,
+body li,
+body span,
+body a,
+body label,
+body input,
+body textarea,
+button,
+blockquote,
+small,
+.caption,
+.service-item,
+#how-it-works,
+.services,
+.naccs,
+.contact-us,
+.about {
+  color: var(--body-text-color) !important;
+}
+
+/* Ensure headings retain their original colors by not overriding h1-h6.
+   If any theme rule explicitly set headings to lightgray, add explicit rule below
+   to restore desired header color (uncomment and edit if needed):
+*/
+/* h1,h2,h3,h4,h5,h6 { color: inherit !important; } */
