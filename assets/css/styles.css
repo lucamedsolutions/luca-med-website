@@ -1,10 +1,3 @@
-/*
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -1803,14 +1796,6 @@ form#contact {
   text-align: center;
 }
 
-form#contact #map iframe {
-  border-top-left-radius: 23px;
-  border-bottom-left-radius: 23px;
-  margin-bottom: -7px;
-  position: relative;
-  z-index: 2;
-}
-
 .fill-form {
   padding: 80px 60px 80px 30px;
 }
@@ -1860,6 +1845,27 @@ form#contact input {
 }
 
 form#contact input::placeholder {
+  color: #aaa;
+}
+
+form#contact select {
+  width: 100%;
+  height: 46px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #2a2a2a;
+  padding: 0px 20px;
+  border-radius: 23px;
+  margin-top: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form#contact select::placeholder {
   color: #aaa;
 }
 
@@ -2204,7 +2210,7 @@ responsive
 }
 
  #contact input,
-     #contact textarea,
+     #contact textarea,#contact select,
      #contact .form-control {
        border: 1px solid #4a4a4a !important;
        color: #222;
@@ -2215,4 +2221,3 @@ responsive
 #contact ::-moz-placeholder { color: #4a4a4a !important; }
 #contact :-ms-input-placeholder { color: #4a4a4a !important; }
 #contact ::placeholder { color: #4a4a4a !important; }
-

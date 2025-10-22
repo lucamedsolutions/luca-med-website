@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/flip.css">
+    <!-- <link rel="stylesheet" href="assets/css/flip.css"> -->
     <link rel="stylesheet" href="assets/css/custom-colors.css">
   </head>
 
@@ -394,10 +394,24 @@
                     </div>
                     <div class="col-lg-6">
                       <fieldset>
-                        <input type="text" name="location-count" id="location-count" placeholder="Number of Locations" autocomplete="on">
+                        <select name="location-count" id="location-count" required>
+                            <option value="" disabled selected>Select Number of Locations</option>
+                            <option value="1">1</option>
+                            <option value="2-5">2-5</option>
+                            <option value="6-10">6-10</option>
+                            <option value="11-25">11-25</option>
+                            <option value="25+">25+</option>
+                        </select>
                       </fieldset>
                       <fieldset>
-                        <input type="text" name="delivery-count" id="delivery-count" placeholder="Estimated Monthly Deliveries" autocomplete="on">
+                        <select name="delivery-count" id="delivery-count" required>
+                            <option value="" disabled selected>Select Estimated Monthly Deliveries</option>
+                            <option value="0-100">0-100</option>
+                            <option value="101-500">101-500</option>
+                            <option value="501-1500">501-1500</option>
+                            <option value="1501-5000">1501-5000</option>
+                            <option value="5000+">5000+</option>
+                        </select>
                       </fieldset>
                       <fieldset>
                         <textarea name="message" type="text" class="form-control" id="message" placeholder="Special Requirements - Cold-chain needs, pickup windows, service areas, etc"></textarea>  
@@ -418,8 +432,6 @@
       </div>
     </div>
   </div>
-
-
   
   <footer>
     <div class="container">
@@ -430,8 +442,7 @@
       </div>
     </div>
   </footer>
-
-
+  
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
